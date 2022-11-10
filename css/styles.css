@@ -280,6 +280,7 @@ article {
   overflow: hidden;
 }
 
+/*
 .my-pic > div {
   width: 2%;
   height: 2%;
@@ -312,6 +313,7 @@ article {
     transform: rotate(-360deg);
   }
 }
+*/
 
 /*  FOR BUTTON  */
 input[type="button"] {
