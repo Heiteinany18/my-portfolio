@@ -268,11 +268,12 @@ article {
   cursor: pointer;
 }
 
+/*
 .my-pic:hover {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  background: 
+  background: linear-gradient(90deg, transparent, transparent),
     url(images/David-Background-Removef.png) center center no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -280,7 +281,7 @@ article {
   overflow: hidden;
 }
 
-/*
+
 .my-pic > div {
   width: 2%;
   height: 2%;
