@@ -272,10 +272,7 @@ article {
 .my-pic:hover {
   width: 300px;
   height: 300px;
-  object-fit: cover;
   background: linear-gradient( transparent, transparent);
-  background-size: cover;
-  background-blend-mode: multiply;
   border: none;
 }
 
