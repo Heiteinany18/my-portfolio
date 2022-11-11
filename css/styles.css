@@ -257,7 +257,8 @@ article {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  background: linear-gradient(90deg, #728688bb, #67727354);
+  background: linear-gradient(90deg, #728688bb, #67727354),
+    url(/images/David-Background-Removef.png) center center no-repeat;
   background-size: cover;
   border-radius: 50%;
   border-style: groove;
@@ -272,8 +273,7 @@ article {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  background: linear-gradient( transparent, transparent),
-    url(images/David-Background-Removef.png) center center no-repeat;
+  background: linear-gradient( transparent, transparent);
   background-size: cover;
   background-blend-mode: multiply;
   border: none;
