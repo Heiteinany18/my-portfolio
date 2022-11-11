@@ -268,12 +268,12 @@ article {
   cursor: pointer;
 }
 
-
+/*
 .my-pic:hover {
   width: 300px;
   height: 300px;
   background: linear-gradient( transparent, transparent);
-  border: none;
+  border: none;*/
 }
 
 /*
@@ -375,12 +375,13 @@ input[type="button"]:hover {
     left: 0%;
   }
 
+  /*
   .my-pic:hover {
     width: 250px;
     height: 300px;
     position: relative;
     left: 0%;
-  }
+  }*/
 
   /*  FOR BUTTON  */
   input[type="button"] {
@@ -404,11 +405,12 @@ input[type="button"]:hover {
     left: 0%;
   }
 
+  /*
   .my-pic:hover {
     width: 50%;
     height: 150px;
   }
-}
+}*/
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   /*  FOR BUTTON  */
@@ -429,11 +431,13 @@ input[type="button"]:hover {
     position: relative;
     left: 0%;
   }
+  
+  /*
   .my-pic:hover {
     width: 150px;
     height: 150px;
   }
-}
+}*/
 
 @media screen and (min-width: 480px) and (max-width: 640px) {
   article {
@@ -459,11 +463,12 @@ input[type="button"]:hover {
     left: 0%;
   }
 
+  /*
   .my-pic:hover {
     width: 150px;
     height: 150px;
   }
-}
+}*/
 
 /*  Media Queries For About Section  */
 @media screen and (min-width: 640px) and (max-width: 767px) {
@@ -496,11 +501,12 @@ input[type="button"]:hover {
     left: 0%;
   }
 
+  /*
   .my-pic:hover {
     width: 200px;
     height: 200px;
   }
-}
+}*/
 
 #projects {
 }
@@ -671,11 +677,12 @@ input[type="button"]:hover {
     height: 350px;
   }
 
-  /*  About Section Image Hover */
+  
+  /*  About Section Image Hover 
   .my-pic > img:hover {
     width: 250px;
     height: 350px;
-  }
+  }*/
 
   /*  FOR BUTTON  */
   input[type="button"] {
