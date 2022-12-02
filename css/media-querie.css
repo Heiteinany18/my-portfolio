@@ -531,6 +531,18 @@
   .wrapper {
     padding: 0 25px;
   }
+  
+  .details div > span {
+    font-size: 16px;
+    position: absolute;
+  }
+
+  .details div > p {
+    font-size: 16px;
+    padding: 0 0 5px 0;
+    margin-left: 80px;
+    color: var(--garyColor);
+  }
 }
 
 /*  Media queries for contact form */
