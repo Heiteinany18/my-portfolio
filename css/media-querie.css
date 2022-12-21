@@ -91,7 +91,7 @@
 
 /*  ABOUT SECTION  */
 /*  Media Queries For About Section  */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 240px) and (max-width: 320px) {
   span {
     font-size: 16px;
   }
@@ -100,11 +100,59 @@
     margin: 0 10px;
   }
 
-  #About {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  #About > .about-section > h3 {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+
+  #About > .about-section > p::first-letter {
+    color: var(--Aqua-Color);
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  #About > .about-section > p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  #About > .about-section > p:nth-child(3) {
+    max-width: 90%;
+    text-align: start;
+  }
+
+  /*  About Section Image  */
+  .my-pic {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .my-pic:hover {
+    width: 100px;
+    height: 100px;
+  }
+
+  /*  FOR BUTTON  */
+  input[type="button"] {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px;
+    position: relative;
+    top: 10px;
+    width: 75px;
+  }
+}
+
+/*  Media Queries For About Section  */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  span {
+    font-size: 16px;
+  }
+
+  article {
+    margin: 0 10px;
   }
 
   #About > .about-section > h3 {
@@ -129,17 +177,23 @@
 
   /*  About Section Image  */
   .my-pic {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    left: 0%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 10px;
   }
 
   .my-pic:hover {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    left: 0%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .my-pic > h3 {
+    position: absolute;
+    right: 10px;
+    top: 35px;
   }
 
   /*  FOR BUTTON  */
@@ -148,8 +202,7 @@
     font-weight: 500;
     padding: 5px;
     position: relative;
-    top: 15px;
-    left: 30%;
+    top: 10px;
     width: 100px;
   }
 }
@@ -177,94 +230,7 @@
     object-fit: cover;
     padding: 10px;
   }
-}
 
-@media screen and (min-width: 480px) and (max-width: 640px) {
-  article {
-    margin: 0 10px;
-  }
-
-  .featured-projects {
-    display: flex;
-    width: 100%;
-  }
-
-  .featured-projects > a > img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    padding: 10px;
-  }
-}
-
-/*  For SmartPhones  */
-@media screen and (min-width: 640px) and (max-width: 767px) {
-  /*  About Paragraph  */
-  #About > .about-section > p {
-    max-width: 90%;
-    text-align: justify;
-  }
-
-  /*  About Section Image  */
-  .my-pic > img {
-    width: 350px;
-    height: 350px;
-  }
-
-  /*  About Section Image Hover */
-  .my-pic > img:hover {
-    width: 350px;
-    height: 350px;
-  }
-
-  /*  FOR BUTTON  */
-  input[type="button"] {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 5px;
-    width: 110px;
-    position: relative;
-    top: 10px;
-  }
-
-  #projects {
-    padding: 10px;
-  }
-
-  .featured-projects {
-    display: flex;
-    width: 100%;
-    height: auto;
-    background-color: var(--project-Color);
-    margin-bottom: 20px;
-    text-align: center;
-    box-shadow: 0px 0px 5px -1px #000;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-
-  .featured-projects > a > img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    padding: 10px;
-  }
-}
-
-/*  Media Queries For About Section  */
-@media screen and (min-width: 240px) and (max-width: 320px) {
-  /*  About Section Image  */
-  .my-pic {
-    width: 150px;
-    height: 150px;
-    position: relative;
-    left: 0%;
-  }
-
-  .my-pic:hover {
-    width: 150px;
-    height: 150px;
-  }
 }
 
 /*  Media Queries For About Section  */
@@ -284,71 +250,24 @@
   .my-pic {
     width: 150px;
     height: 150px;
-    position: relative;
-    left: 0%;
+    position: absolute;
+    right: 10px;
   }
   .my-pic:hover {
     width: 150px;
     height: 150px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .my-pic > h3 {
+    position: absolute;
+    right: 30px;
+    top: 55px;
   }
 }
 
 /*  Media Queries For About Section  */
-@media screen and (min-width: 480px) and (max-width: 640px) {
-  article {
-    margin: 0 10px;
-  }
-
-  /*  FOR BUTTON  */
-  input[type="button"] {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 5px;
-    position: relative;
-    top: 15px;
-    left: 0%;
-    width: 100px;
-  }
-
-  /*  About Section Image  */
-  .my-pic {
-    width: 150px;
-    height: 150px;
-    position: relative;
-    left: 0%;
-  }
-
-  .my-pic:hover {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-/*  For Tablets  */
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-  article {
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px;
-  }
-
-  #projects {
-    padding: 10px;
-  }
-
-  .featured-projects {
-    width: 100%;
-    height: auto;
-  }
-
-  .featured-projects > a > img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    padding: 10px;
-  }
-}
-
 @media screen and (min-width: 480px) and (max-width: 640px) {
   article {
     margin: 0 10px;
@@ -366,24 +285,60 @@
     padding: 10px;
   }
 
-    /*  FOR BUTTON  */
-    input[type="button"] {
-      font-size: 16px;
-      font-weight: 530;
-      padding: 5px;
-      width: 110px;
-    }
+  #About > .about-section > p::first-letter {
+    color: var(--Aqua-Color);
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  #About > .about-section > p:nth-child(2) {
+    font-size: 25px;
+  }
+
+  /*  About Section Image  */
+  .my-pic {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .my-pic:hover {
+    width: 150px;
+    height: 150px;
+  }
+
+  .my-pic > h3 {
+    position: absolute;
+    right: 30px;
+    top: 55px;
+  }
+
+  /*  FOR BUTTON  */
+  input[type="button"] {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    position: relative;
+    top: 15px;
+    left: 0%;
+    width: 120px;
+  }
 }
 
 /*  For SmartPhones  */
 @media screen and (min-width: 640px) and (max-width: 767px) {
-  /*  About Paragraph  */
   #About > .about-section > p {
     max-width: 90%;
     text-align: justify;
   }
 
   /*  About Section Image  */
+  .my-pic {
+    position: absolute;
+    right: 10px;
+  }
+
   .my-pic > img {
     width: 350px;
     height: 350px;
@@ -404,43 +359,6 @@
     position: relative;
     top: 10px;
   }
-}
-
-/*  Media Queries For About Section  */
-@media screen and (min-width: 640px) and (max-width: 767px) {
-  article {
-    margin: 0 10px;
-  }
-
-  /*  FOR BUTTON  */
-  input[type="button"] {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 5px;
-    position: relative;
-    top: 15px;
-    left: 0%;
-    width: 100px;
-  }
-
-  /*  About Paragraph  */
-  #About > .about-section > p {
-    max-width: 100%;
-    text-align: justify;
-  }
-
-  /*  About Section Image  */
-  .my-pic {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    left: 0%;
-  }
-
-  .my-pic:hover {
-    width: 200px;
-    height: 200px;
-  }
 
   #projects {
     padding: 10px;
@@ -456,6 +374,31 @@
     box-shadow: 0px 0px 5px -1px #000;
     border-radius: 5px;
     transition: 0.3s;
+  }
+
+  .featured-projects > a > img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    padding: 10px;
+  }
+}
+
+/*  For Tablets  */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  article {
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  #projects {
+    padding: 10px;
+  }
+
+  .featured-projects {
+    width: 100%;
+    height: auto;
   }
 
   .featured-projects > a > img {
@@ -483,6 +426,10 @@
     height: 350px;
     object-fit: cover;
     padding: 10px;
+  }
+
+  .wrapper {
+    margin: 0 20px;
   }
 }
 
@@ -516,6 +463,10 @@
     object-fit: cover;
     padding: 10px;
   }
+
+  .wrapper {
+    margin: 0 0px;
+  }
 }
 
 /* CONTACT FORM*/
@@ -531,7 +482,7 @@
   .wrapper {
     padding: 0 25px;
   }
-  
+
   .details div > span {
     font-size: 16px;
     position: absolute;
@@ -560,7 +511,7 @@
 /*  Media queries for contact form */
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .wrapper {
-    padding: 0 25px;
+    margin: 0 20px;
   }
 
   #contact-form {
@@ -572,14 +523,13 @@
 /*  Media queries for contact form */
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .wrapper {
-    padding: 0 25px;
+    margin: 0 20px;
   }
 
   #contact-form {
     height: 100px;
     margin-bottom: 70px;
   }
-
 }
 
 /*  FOOTER SECTION  */
