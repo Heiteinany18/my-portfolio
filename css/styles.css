@@ -106,11 +106,10 @@ header {
   border: 1px solid var(--Aqua-Color);
 }
 
-/*  Media Queries For Header / Navigation Bar  */
-
 /*  Color For All Span Tags  */
 span {
   color: var(--Aqua-Color);
+  font-weight: 600;
 }
 
 main {
@@ -121,7 +120,7 @@ main {
 article {
   justify-content: center;
   align-items: center;
-  margin: 0 100px;
+  margin: 0 50px;
 }
 
 /*  FOR ABOUT SECTION  */
@@ -129,7 +128,6 @@ article {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -143,7 +141,6 @@ article {
 
 /*  About Paragraph  */
 #About > .about-section > p {
-  max-width: 70%;
   text-align: justify;
   margin-bottom: 5px;
   color: var(--garyColor);
@@ -167,11 +164,6 @@ article {
   text-decoration: none;
 }
 
-#About > .about-section {
-  max-width: 50%;
-  text-align: justify;
-}
-
 /*  About Section Image  */
 .my-pic {
   width: 300px;
@@ -188,8 +180,8 @@ article {
   border-radius: 50%;
   border-style: groove;
   border-inline-color: var(--garyColor);
-  position: relative;
-  left: 0%;
+  position: absolute;
+  right: 100px;
   cursor: pointer;
 }
 
@@ -206,40 +198,17 @@ article {
   overflow: hidden;
 }
 
-/*
-.my-pic > div {
-  width: 2%;
-  height: 2%;
-  transform-origin: 151px center;
-  animation: rotate 3s linear infinite;
-  margin-top: 49%;
-  border-radius: 100px;
-  position: relative;
-  top: .5px;
-  right: 2.9px;
-  background-color: var(--textColor);
-  box-shadow: 0pc 0px 5px #fff;
-  z-index: 1;
-}
-
-.my-pic > div:before {
-  content: "";
+.my-pic > h3 {
   position: absolute;
-  width: 2%;
-  height: 2%;
-  animation: rotate 3s linear reverse infinite;
+  right: 100px;
+  top: 125px;
+  color: #f5f6f986;
+  text-shadow: -1px 1px 2px #000;
 }
 
-.my-pic:hover div{
+.my-pic:hover h3 {
   display: none;
 }
-
-@keyframes rotate {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-*/
 
 /*  FOR BUTTON  */
 input[type="button"] {
@@ -250,7 +219,7 @@ input[type="button"] {
   border: none;
   padding: 5px;
   position: relative;
-  top: 80px;
+  top: 50px;
   width: 150px;
   box-shadow: 2px 3px 5px #0e1011;
   cursor: pointer;
@@ -258,18 +227,18 @@ input[type="button"] {
 
 input[type="button"]:hover {
   background: #00d5ff;
+  color: #031a30e4;
 }
 
-/*  Media Queries For About Section  */
-
+/*  FOR PROJECT SECTION  */
 #projects > .title > h3 {
-  font-size: 20px;
-  font-weight: 800;
   letter-spacing: 1px;
+  font-size: 20px;
   margin-bottom: 10px;
   position: relative;
 }
 
+/*  For project heading  */
 #projects > .content-header {
   font-size: 18px;
   color: var(--garyColor);
@@ -296,6 +265,7 @@ input[type="button"]:hover {
   border-radius: 50px;
 }
 
+/*  Keyframes for the Moving Line Animation  */
 @keyframes movingLine {
   0% {
     left: 0;
@@ -310,6 +280,7 @@ input[type="button"]:hover {
   }
 }
 
+/*  For project container  */
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -355,7 +326,7 @@ input[type="button"]:hover {
 }
 
 .featured-projects > a > .project-discription {
-  text-align: justify;
+  text-align: center;
   color: var(--garyColor);
   padding: 10px;
 }
@@ -369,6 +340,7 @@ input[type="button"]:hover {
   width: 300px;
   height: 350px;
   object-fit: cover;
+  border-radius: 5px 5px 0 0;
 }
 
 /*  FOR CONTACT FORM  */
@@ -378,12 +350,11 @@ input[type="button"]:hover {
 }
 
 .wrapper {
-  padding: 0 100px;
+  margin: 0 50px;
 }
 
 /*  Contact title  */
-#contact-form > .title {
-  font-size: 20px;
+#contact-form .title {
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -394,13 +365,11 @@ input[type="button"]:hover {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  font-size: 18px;
 }
 
 .details div > span {
-  position: absolute;
   font-size: 20px;
-  
+  position: absolute;
 }
 
 .details div > p {
